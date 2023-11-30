@@ -1,0 +1,25 @@
+
+/**
+ * 
+ * @param {string}placeholder
+ * @param {string} value
+ * @param {(s:string)=>void} onChange
+ */
+
+
+
+
+
+
+// eslint-disable-next-line react/prop-types
+export function Input ({placeholder,value, onChange}){
+    return <div>
+        <input 
+        className="form-control"
+         type="text"
+        value={value}
+        placeholder={placeholder}
+        onChange={ ((e)=> onChange(e.target.value))}
+         />
+    </div>
+}
